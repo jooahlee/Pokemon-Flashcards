@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Lobster+Two:ital,wght@0,700;1,400&display=swap');;
+html, body {
+  font-family: 'Dancing Script', cursive;
+  margin: 100;
+}
+
+
+
+header>span {
+  padding: 20px;
+  margin-left: 30px;
+  margin-bottom: 12px;
+}
+/* Div*/
+div {
+  margin:40px;
+}
+
+
+header {
+  font-family: 'Lobster Two', cursive;
+  padding: 2px 10px 12px 8px;
+  border: 3px dotted #2121e8;
+  border-radius: 8px;
+
+}
+
+#how-many {
+  color: #450297;
+  
+
+}
+
+#show-hide {
+
+  text-align: center;
+}
+#pokemon-list {
+  border-style: solid;
+  color: #e665a4;
+  border-radius: 8px;
+}
+
+label {
+  font-family: 'Dancing Script', cursive;
+}
+#howmanypokemons {  
+  background-color:#FFDAB9;
+  width: 53%;
+  border: 2px solid#e665a4;
+  border-radius: 5px;
+  padding: 7px 30px 7px 30px;
+
+}
+
+
+h1 {
+  font-family:Papyrus, Arial, Helvetica, sans-serif;
+  text-shadow: 5px 3px 3px #707070;
+  color:#c02a57;
+}
+h2 {
+  font-family: 'Dancing Script', cursive;
+}
+li > img {
+  visibility: hidden;
+}
+
+
+
+/* Buttons */
+     
+button {
+  font-family: 'Indie Flower', cursive;
+  width: 150px;
+  background-color: pink;
+  border-radius: 8px; 
+  padding: 6px;
+}
+
+button:hover {
+  font-family: 'Indie Flower', cursive;
+  width: 160px;
+  background-color: #db7093;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+button:active, button:focus {
+  font-family: 'Indie Flower', cursive;
+  padding: 10px;
+  background-color: #bb3561;
+  color: #fff;
+}
+
+#eevee {
+  width: 100px;
+  transition-property: width;
+  transition-duration: 3s;
+  transition-timing-function: ease-in;
+  transform: skew(20deg,10deg);
+}
+
+
+#eevee:hover {
+  width: 150px;
+}
+
+/* Pokemon List */
+#charizard{ 
+  animation-name: pokemonrotate;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;  
+}
+
+
+
+.cpokemon {
+  animation-name:pokemontransition;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }  
+
+@keyframes pokemontransition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#gardevoir {
+  animation-name:gardevoir;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-duration:5s;
+}
+@keyframes gardevoir {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:60px;}
+  75%  {left:0px; top:60px;}
+  100% {left:0px; top:0px;}
+}
+
+@keyframes pokemonrotate {
+  from {
+    transform:rotate(0deg);
+  }  
+  to  {
+    transform: rotate(359deg);
+  }
+}
+
+/* Footer */
+footer {
+  font-family: Lucida Handwriting;
+  background-color: #4b25b1;
+  color: #fff;
+  align-content: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-weight: 400;
+  text-align:  center;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+/* Flashcard */
+#flashcard-term {
+  color: #b7b9f0ff;
+  background-color:#364196;
+  width: 200px;
+  border-radius: 10px;
+  padding: 7px 30px 7px 30px;
+  text-align: center;
+  align-items:center;
+  margin: 0 auto;
+  justify-content: center;
+  border: 5px solid#b3b5ffff;
+}
+
+#flashcard-definition {
+  color: #beaaeeff;
+  background-color:#480599;
+  width: 200px;
+  border-radius: 10px;
+  padding: 7px 30px 7px 30px;
+  text-align: center;
+  align-items:center;
+  margin: 0 auto;
+  margin-top: 15px;
+  justify-content: center;
+  border: 5px solid#b3b5ffff;
+  
+}

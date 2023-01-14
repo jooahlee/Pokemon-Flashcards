@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Meta Tags for Website-->
+<meta charset="UTF-8" />
+    <meta name="description" content="Pokemon Website" />
+    <meta name="keywords" content="Pokemon, game, fun" />
+    <meta name="author" content="Jooah Lee" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Website CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Title -->
+    <title>The Pokemon Website</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon"/>
+  </head>
+    <body onload = "getRandom()">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ea1f2cbb13.js" crossorigin="anonymous"></script>
+
+    <!-- Website Styles -->
+    <style>
+      header {
+        background-color: lightblue;
+      }
+    </style>  
+<body>
+    <!-- Header -->
+    <header>
+     <!-- Logo -->  
+      <img src="assets/logo.png" alt="Our Logo!" width="150px" />
+  
+      <span><a href="index.html">Home</a></span>
+      <span><a href="https://www.pokemon.com">About Pokemon</a></span>
+      <span><a href="https://pokemondb.net/">Pokemon Database</a></span>
+    <span> <a href="#">Flashcard </a></span>
+    </header>  
+
+
+  <!-- Flashcards -->
+  <div>
+    <div id="flashcard-term">
+      <h2>Term</h2>
+    </div>
+
+    <div id="flashcard-definition" style="visibility: hidden">
+      <p> Definition</p>
+    </div>
+  </div>
+  <div class="flashcards-btn">
+    <button id="flash-def-btn" onclick="showDefinition()" >Show Definition</button>
+    <button onclick="getRandom()">Next Term</button>
+  </div>
+  
+  <!-- Footer -->
+    <footer>
+      <p>
+              ✧Made with hard effort by Jooah, 2022✧
+      </p>
+    </footer>
+        
+      <script src="script.js"></script>
+</body>
+</html>
+      
